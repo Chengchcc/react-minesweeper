@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "iconfont";
+    /* Project id 3296793 */
+    src: url('//at.alicdn.com/t/font_3296793_jx4v0a07s6.woff2?t=1648907664097') format('woff2'),
+        url('//at.alicdn.com/t/font_3296793_jx4v0a07s6.woff?t=1648907664097') format('woff'),
+        url('//at.alicdn.com/t/font_3296793_jx4v0a07s6.ttf?t=1648907664097') format('truetype');
+}
+
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-clock:before {
+    content: "\e6bb";
+}
+
+.icon-question:before {
+    content: "\e7fe";
+}
+
+.icon-boom:before {
+    content: "\e63a";
+}
+
+.icon-flag:before {
+    content: "\e6fb";
+}
+
+.btn {
+    @apply font-bold py-2 px-4 rounded;
+}
+
+.btn-green {
+    @apply bg-green-500 text-white;
+}
+
+.btn-green:hover {
+    @apply bg-green-700;
+}
+
+
+
+
+.alert {
+    @apply fixed min-w-fit w-auto m-auto text-white px-6 py-4 border-0 rounded mb-4 left-1/2 -translate-x-1/2 shadow shadow-black transition-all;
+}
